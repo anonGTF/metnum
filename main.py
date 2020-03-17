@@ -1,4 +1,5 @@
 from menu import *
+from func import *
 
 
 print("ax^2 + bx + c\n")
@@ -21,3 +22,6 @@ print("\nMenu Metode Penyelesaian:\n"
 pilihan_metode = int(input("masukan pilihan: "))
 
 print(f'\nhasil: {menu.pilihan(menu, pilihan_metode)}')
+
+func = MyFunc(a, b, c)
+func.grafik_kuadrat()

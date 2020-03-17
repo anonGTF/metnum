@@ -8,7 +8,7 @@ def newton_raphson(a, b, c, tebakan, error):
     while err > error:
         x1 = myfunc.nilaix1(tebakan)
         err = tebakan - x1
-        # print(f"x: {tebakan} fx: {myfunc.func(tebakan)} f'x: {myfunc.func_der(tebakan)} x1: {x1} err: {err}")
+        print("x: %6.4f f(x): %6.4f f'(x): %6.4f x1: %6.4f error: %6.4f " % (tebakan, myfunc.func(tebakan), myfunc.func_der(tebakan), x1, err))
         if err > error:
             tebakan = x1
 

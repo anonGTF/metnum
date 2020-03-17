@@ -35,7 +35,7 @@ class Menu:
             return table(self.a, self.b, self.c, self.batas_atas, self.batas_bawah, self.iterasi)
         elif x == 2:
             menu.input_met_1(menu)
-            return bisection(self.a, self.b, self.c, self.batas_atas, self.batas_bawah, self.error)
+            return bisection(self.a, self.b, self.c, self.batas_atas, self.batas_bawah, self.error, self.iterasi)
         elif x == 3:
             menu.input_met_1(menu)
             return regula_falsi(self.a, self.b, self.c, self.batas_atas, self.batas_bawah, self.error, self.iterasi)

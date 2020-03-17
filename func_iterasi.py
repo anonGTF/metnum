@@ -8,7 +8,7 @@ def iterasi(a, b, c, tebakan, error):
     while abs(err) > error:
         yx = myfunc.func_gx(tebakan)
         err = tebakan - yx
-        # print(f'tebakan: {tebakan} yx: {yx} err: {err}')
+        print('x: %6.4f f(x): %6.4f error: %6.4f ' % (tebakan, yx, err))
         if abs(err) > error:
             tebakan = yx
 
